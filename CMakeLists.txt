@@ -8,6 +8,9 @@ add_subdirectory(deps)
 add_subdirectory(src/modules)
 set(SRC_SERVER_TMP
         src/acl.c
+        src/monotonic.c
+        src/timeout.c
+        src/crcspeed.c
         src/adlist.c
         src/ae.c
         src/ae_kqueue.c
@@ -96,8 +99,13 @@ set(SRC_CLI
         src/anet.c
         src/ae.c
         src/crc64.c
+        src/cli_common.c
+        src/dict.c
+        src/crc16.c
+        src/crcspeed.c
+        src/monotonic.c
+        src/siphash.c
         )
-
 
 set(EXECUTABLE_OUTPUT_PATH src)
 link_directories(deps/linenoise/ deps/lua/src deps/hiredis)

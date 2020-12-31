@@ -6,4 +6,5 @@ add_library(hiredis STATIC
         async.c
         read.c
         sockcompat.c
+        alloc.c
         )
