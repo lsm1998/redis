@@ -13,7 +13,6 @@ set(SRC_SERVER_TMP
         src/crcspeed.c
         src/adlist.c
         src/ae.c
-        src/ae_kqueue.c
         src/anet.c
         src/aof.c
         src/bio.c
